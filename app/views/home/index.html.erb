@@ -1,0 +1,399 @@
+
+
+<!-- New Releases -->
+  <div id="new-releases" class="new-releases container">
+    <div class="row">
+
+      <div class="col-md-6 releases">
+        <h4>Our Production</h4>
+        <!-- Jplayer Home -->
+        <div id="jp_container_N" class="jplayer-home">
+          <div class="jp-type-playlist">
+
+            <div id="jquery_jplayer_N" class="jp-jplayer"></div><!-- .jp-layer -->
+
+            <div class="jp-gui">
+              <div id="nowPlaying"></div><!-- #nowPlaying -->
+
+              <div class="jp-interface">
+                <div class="jp-progress">
+                  <div class="jp-seek-bar">
+                    <div class="jp-play-bar"></div>
+                  </div>
+                </div><!-- .jp-progress -->
+
+                <div class="time left">
+                  <span class="jp-current-time" role="timer" aria-label="time">&nbsp;</span>
+                </div>
+                <div class="time right clearfix">
+                  <span class="jp-duration" role="timer" aria-label="duration">&nbsp;</span>
+                </div>
+
+                <div class="jp-controls-holder">
+                  <div class="jp-controls">
+                    <button class="jp-previous" tabindex="0"><i class="flaticon-multimediaoption147"></i></button>
+                    <button class="jp-play" tabindex="0"><i class="flaticon-playbutton22"></i></button>
+                    <button class="jp-stop" tabindex="0"><i class="flaticon-geometry60"></i></button>
+                    <button class="jp-next" tabindex="0"><i class="flaticon-multimediaoption145"></i></button>
+                  </div><!-- .jp-controls -->
+
+                  <div class="jp-toggles">
+                    <button class="jp-repeat" tabindex="0"><i class="flaticon-round72"></i></button>
+                    <button class="jp-shuffle" tabindex="0"><i class="flaticon-random9"></i></button>
+                  </div><!-- .jp-toggles -->
+                </div><!-- .jp-controls-holder -->
+
+                <!-- <div class="jp-details">
+                  <div class="jp-title" aria-label="title">&nbsp;</div>
+                </div> -->
+              </div><!-- .jp-interface -->
+            </div><!-- .jp-gui -->
+
+            <div class="jp-playlist">
+              <ul>
+                <!-- The method Playlist.displayPlaylist() uses this unordered list -->
+                <li>&nbsp;</li>
+              </ul>
+            </div><!-- .jp-playlist -->
+
+            <div class="jp-no-solution">
+              <span>Update Required</span>
+              To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+            </div><!-- .jp-no-solution -->
+          </div><!-- .jp-type-playlist -->
+        </div><!-- .jp-container_N -->
+      </div>
+
+      <div class="col-md-6 videos">
+        <h4>Our Videos</h4>
+        <div class="vimeo-video embed-video">
+          <iframe src="https://player.vimeo.com/video/24042544?color=6018d5&amp;byline=0" width="500" height="343" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Tour Dates -->
+  <div id="tour-dates" class="tour-dates hover-section">
+    <div class="container">
+      <div class="category-head">
+        <h4><%= @home.first.TourTitle%></h4>
+        <div class="bars-animation">
+          <div class="bar one"></div>
+          <div class="bar two"></div>
+          <div class="bar three"></div>
+          <div class="bar four"></div>
+        </div>
+      </div><!-- Category Head -->
+
+      <div class="row tour">
+        <div class="col-sm-2">
+          <h2><%= @home.second.TourDate%></h2>
+        </div>
+
+        <div class="col-sm-10">
+          <h5><%= @home.second.TourTitle%></h5>
+
+          <p class="location"><i class="flaticon-location74"></i> <%= @home.second.TourLocation%></p>
+
+          <!-- Countdown -->
+          <ul id="countdown-home-1" class="countdown countdown-1 clearfix">
+              <li>
+                  <span class="days">00</span>
+                  <p class="timeRefDays">days</p>
+              </li>
+              <li>
+                  <span class="hours">00</span>
+                  <p class="timeRefHours">hours</p>
+              </li>
+              <li>
+                  <span class="minutes">00</span>
+                  <p class="timeRefMinutes">min</p>
+              </li>
+              <li>
+                  <span class="seconds">00</span>
+                  <p class="timeRefSeconds">sec</p>
+              </li>
+          </ul> 
+
+          <div class="buttons">
+            <a href="tour.html" class="button gradient"><i class="flaticon-shopping122"></i> Buy Ticket</a>
+            <a href="tour.html" class="button dark"><i class="flaticon-lightning23"></i> RSVP</a>
+          </div>
+        </div>
+      </div>
+      <div class="row tour">
+        <div class="col-sm-2">
+          <h2><%= @home.third.TourDate%></h2>
+        </div>
+
+        <div class="col-sm-10">
+          <h5><%= @home.third.TourTitle%></h5>
+
+          <p class="location"><i class="flaticon-location74"></i> <%= @home.third.TourLocation%></p>
+
+          <div class="buttons">
+            <a href="tour.html" class="button gradient"><i class="flaticon-shopping122"></i> Buy Ticket</a>
+            <a href="tour.html" class="button dark"><i class="flaticon-lightning23"></i> RSVP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Gallery -->
+  <div id="gallery" class="gallery-home clearfix">
+   <!-- @gallery.first.ImageUrl --> 
+  <%= link_to(image_tag("gallery-1.jpg", :alt =>  "IMG", :class =>"double"), 
+    image_path( "/assets/images/gallery-1-big.jpg")) %>
+    <!-- @gallery.second.ImageUrl --> 
+
+   
+    <!-- @gallery.third.ImageUrl --> 
+    <!-- @gallery.fourth.ImageUrl --> 
+    <a href="assets/img/gallery/gallery-2-big.jpg" class="double">
+      <%= image_tag(image_path('gallery-2.jpg'))%>
+    </a>
+
+
+
+    <!-- @gallery.fifth.ImageUrl --> 
+    <!-- @gallery.sixth.ImageUrl --> 
+    <a href="assets/img/gallery/gallery-3-big.jpg">
+      <%= image_tag(image_path('gallery-3.jpg'))%>
+    </a>
+
+    <!-- @gallery.seventh.ImageUrl --> 
+    <!-- @gallery.eigth.ImageUrl --> 
+    <a href="assets/img/gallery/gallery-4-big.jpg">
+      <%= image_tag(image_path('gallery-4.jpg'))%>
+    </a>
+
+    <!-- @gallery.nineth.ImageUrl --> 
+    <!-- @gallery.tenth.ImageUrl --> 
+    <a href="assets/img/gallery/gallery-5-big.jpg">
+      <%= image_tag(image_path('gallery-5.jpg'))%>
+    </a>
+  </div>
+
+  <!-- About -->
+  <div id="about" class="about-home container hover-section">
+    <div class="category-head">
+      <!-- @about.first.Title-->
+      <h4>About</h4>
+      <div class="bars-animation">
+        <div class="bar one"></div>
+        <div class="bar two"></div>
+        <div class="bar three"></div>
+        <div class="bar four"></div>
+      </div>
+      <!-- @about.first.Content -->
+      <p>fsjfsjfsjfks</p>
+    </div><!-- Category Head -->
+    <div class="row info-container">
+
+      <div class="col-sm-4 info left">
+        <div class="info-pannel">
+          <!-- <img src="assets/img/elements/icon-1.png" alt="Icon" class="icon"> -->
+          <!-- @about.first.ImageUrl -->
+          <%= image_tag(image_path('icon-1.png'),class: 'icon')%>
+
+          <!--Yaha ssia second start hoga -->
+          <h5>CUSTOM PLAYER</h5>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+        </div>
+
+        <div class="info-pannel">
+          <!-- <img src="assets/img/elements/icon-2.png" alt="Icon" class="icon"> -->
+          <%= image_tag(image_path('icon-2.png'),class: 'icon')%>
+
+          <h5>DISCOGRAPHY</h5>
+
+          <p>Do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-sm-push-4 info right">
+        <div class="info-pannel">
+          <!-- <img src="assets/img/elements/icon-3.png" alt="Icon" class="icon"> -->
+          <%= image_tag(image_path('icon-3.png'),class: 'icon')%>
+          <h5>TOUR DATES</h5>
+
+          <p>Magna aliqua, nim ad minim veniam, quis nostrud exercitation ullamco .</p>
+        </div>
+
+        <div class="info-pannel">
+          <!-- <img src="assets/img/elements/icon-4.png" alt="Icon" class="icon"> -->
+          <%= image_tag(image_path('icon-4.png'),class: 'icon')%>
+          <h5>E-COMMERCE</h5>
+
+          <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-sm-pull-4">
+        <!-- <img src="assets/img/elements/about-img-1.png" alt="Img" class=" about-cover"> -->
+        <%= image_tag(image_path('about-img-1.png'), class: "about-cover")%>
+      </div>
+    </div>
+  </div>
+
+  <!-- Latest Work -->
+  <div id="latest-work" class="latest-work container hover-section">
+    <div class="category-head">
+    <!-- @latest.first.Title -->
+      <h4>Latest Work</h4>
+      <div class="bars-animation">
+        <div class="bar one"></div>
+        <div class="bar two"></div>
+        <div class="bar three"></div>
+        <div class="bar four"></div>
+      </div>
+    </div><!-- Category Head -->
+
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="album">
+          <a class="case" href="track.html">
+            <div class="disk-wrapper">
+            <!-- @latest.first.ImagesUrl -->
+              <!-- <img src="assets/img/albums/disk.png" alt="Disk"> -->
+              <%= image_tag(image_path('disk.png'))%>
+            </div>
+            <div class="case-wrapper">
+              <!-- <img src="assets/img/albums/case.png" alt="Case"> -->
+              <%= image_tag(image_path('case.png'))%>
+            </div>
+            <!-- <img src="assets/img/albums/case-cover-1.jpg" alt="Cover" class="img-responsive cover"> -->
+            <%= image_tag(image_path('case-cover-1.jpg'))%>
+          </a>
+          <h5>trance &amp; dubstep</h5>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="album">
+          <a class="case" href="track.html">
+            <div class="disk-wrapper">
+              <%= image_tag(image_path('disk.png'))%>
+            </div>
+            <div class="case-wrapper">
+              <%= image_tag(image_path('case.png'))%>
+            </div>
+            <%= image_tag(image_path('case-cover-2.jpg'))%>
+          </a>
+          <h5>chillout of nature</h5>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="album">
+          <a class="case" href="track.html">
+            <div class="disk-wrapper">
+              <%= image_tag(image_path('disk.png'))%>
+            </div>
+            <div class="case-wrapper">
+              <%= image_tag(image_path('case.png'))%>
+            </div>
+            <%= image_tag(image_path('case-cover-3.jpg'))%>
+          </a>
+          <h5>morning music blow</h5>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="album">
+          <a class="case" href="track.html">
+            <div class="disk-wrapper">
+              <%= image_tag(image_path('disk.png'))%>
+            </div>
+            <div class="case-wrapper">
+              <%= image_tag(image_path('case.png'))%>
+            </div>
+            <%= image_tag(image_path('case-cover-4.jpg'))%>
+          </a>
+          <h5>trance &amp; dubstep</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Twitter Feed -->
+  <div class="twitter-feed parallaxBG">
+    <div class="container">
+      <!-- Here will be added automatically the tweet -->
+      <div id="tweet-example-1"></div>
+    </div>
+  </div>
+
+  <!-- Blog Home -->
+  <div id="blog" class="blog-home container hover-section">
+    <div class="category-head">
+    
+    <!-- @blog.first.Title-->
+      <h4>Recent Blogs</h4>
+      <div class="bars-animation">
+        <div class="bar one"></div>
+        <div class="bar two"></div>
+        <div class="bar three"></div>
+        <div class="bar four"></div>
+      </div>
+    </div><!-- Category Head -->
+
+    <!-- Article 1 -->
+    <div class="row article">
+      <div class="col-sm-6 col-md-5">
+        <!-- <img src="assets/img/blog/blog-home-1.jpg" alt="Img" class="img-responsive"> -->
+        
+        <!-- @blog.first.ImagesUrl -->
+        <%= image_tag(image_path('blog-home-1.jpg'))%>
+      </div>
+      <div class="col-sm-6 col-md-7 info left">
+        <h5>Soundcloud - the best of music flatform</h5>
+
+        <!-- @blog.first.Content -->
+        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint </p>
+
+        <a href="single.html" class="button"><i class="flaticon-plus79"></i> Read more</a>
+      </div>
+    </div>
+    
+    <!-- Article 2 -->
+    <div class="row article">
+      <div class="col-sm-6 col-md-5 col-sm-push-7">
+        <!-- <img src="assets/img/blog/blog-home-2.jpg" alt="Img" class="img-responsive"> -->
+        <%= image_tag(image_path('blog-home-2.jpg'))%>
+      </div>
+      <div class="col-sm-6 col-md-7 col-sm-pull-5 info right">
+        <h5>The chilloutland liveshow 2017</h5>
+
+        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint </p>
+
+        <a href="single.html" class="button"><i class="flaticon-plus79"></i> Read more</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Brand Home -->
+  <div class="brand-home">
+    <div class="container">
+      <div class="item">
+        <!-- <img src="assets/img/elements/brand-1.png" alt="Brand"> -->
+        <%= image_tag(image_path('brand-1.png'))%>
+      </div>
+      <div class="item">
+        <!-- <img src="assets/img/elements/brand-2.png" alt="Brand"> -->
+        <%= image_tag(image_path('brand-2.png'))%>
+      </div>
+      <div class="item">
+        <!-- <img src="assets/img/elements/brand-3.png" alt="Brand"> -->
+        <%= image_tag(image_path('brand-3.png'))%>
+      </div>
+      <div class="item">
+        <!-- <img src="assets/img/elements/brand-4.png" alt="Brand"> -->
+        <%= image_tag(image_path('brand-4.png'))%>
+      </div>
+      <div class="item">
+        <!-- <img src="assets/img/elements/brand-5.png" alt="Brand"> -->
+        <%= image_tag(image_path('brand-5.png'))%>
+      </div>
+    </div>
+  </div>

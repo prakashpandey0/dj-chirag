@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Djchirag</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application',  'data-turbolinks-track' => true %>
+    
+  </head>
+
+  
+    <body >
+
+    
+  
+  <!-- Header Bar -->
+  
+<%= render 'partials/header' %>
+  <!-- Header Revolution Slider -->
+  
+  
+  <%= yield() %>
+  
+  <!-- Footer -->
+  <%= render 'partials/footer'%>
+  <!-- ======== JavaScript ======== -->
+  <script type="text/javascript" src="./assets/javascripts/js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.fitvids.js"></script>
+  <script type="text/javascript" src="assets/lightGallery/js/lightgallery.min.js"></script>
+  <script type="text/javascript" src="./assets/js/instafeed.min.js"></script>
+  <script type="text/javascript" src="assets/js/countdown.js"></script>
+  <!-- Twitter -->
+  <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+  <script type="text/javascript" src="assets/js/twitter.config.js"></script>
+  <!-- jQuery REVOLUTION Slider  -->
+  <script type="text/javascript" src="assets/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+  <script type="text/javascript" src="assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+  <!-- Jplayer -->
+  <script type="text/javascript" src="assets/jplayer/jplayer/jquery.jplayer.js"></script>
+  <script type="text/javascript" src="assets/jplayer/add-on/jplayer.playlist.js"></script>
+  <script type="text/javascript" src="assets/js/playlist.js"></script>
+  <!-- Custom JavaScript -->
+  <script type="text/javascript" src="assets/js/js.js"></script>
+  <!-- MailChimp Subscribe Form Script -->
+  <script type='text/javascript' src='assets/js/mc.validate.js'></script>
+  </body>
+
+</html>

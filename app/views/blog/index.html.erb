@@ -1,0 +1,46 @@
+<div id="blog" class="blog-home container hover-section">
+    <div class="category-head">
+    
+    <%= @blog.first.Title %>
+      <h4>Recent Blogs</h4>
+      <div class="bars-animation">
+        <div class="bar one"></div>
+        <div class="bar two"></div>
+        <div class="bar three"></div>
+        <div class="bar four"></div>
+      </div>
+    </div><!-- Category Head -->
+
+    <!-- Article 1 -->
+    <div class="row article">
+      <div class="col-sm-6 col-md-5">
+        <!-- <img src="assets/img/blog/blog-home-1.jpg" alt="Img" class="img-responsive"> -->
+        
+        <!-- @blog.first.ImagesUrl -->
+        <%= image_tag(image_path('blog-home-1.jpg'))%>
+      </div>
+      <div class="col-sm-6 col-md-7 info left">
+        <h5>Soundcloud - the best of music flatform</h5>
+
+        <!-- @blog.first.Content -->
+        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint </p>
+
+        <a href="single.html" class="button"><i class="flaticon-plus79"></i> Read more</a>
+      </div>
+    </div>
+    
+    <!-- Article 2 -->
+    <div class="row article">
+      <div class="col-sm-6 col-md-5 col-sm-push-7">
+        <!-- <img src="assets/img/blog/blog-home-2.jpg" alt="Img" class="img-responsive"> -->
+        <%= image_tag(image_path('blog-home-2.jpg'))%>
+      </div>
+      <div class="col-sm-6 col-md-7 col-sm-pull-5 info right">
+        <h5>The chilloutland liveshow 2017</h5>
+
+        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint </p>
+
+        <a href="single.html" class="button"><i class="flaticon-plus79"></i> Read more</a>
+      </div>
+    </div>
+  </div>

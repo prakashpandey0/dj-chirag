@@ -1,0 +1,58 @@
+<div id="about" class="about-home container hover-section">
+    <div class="category-head">
+      <h4><%= @about.first.Title %></h4>
+      <div class="bars-animation">
+        <div class="bar one"></div>
+        <div class="bar two"></div>
+        <div class="bar three"></div>
+        <div class="bar four"></div>
+      </div>
+      <p><%= @about.first.Content %></p>
+    </div><!-- Category Head -->
+    <div class="row info-container">
+
+      <div class="col-sm-4 info left">
+        <div class="info-pannel">
+          <!-- <img src="assets/img/elements/icon-1.png" alt="Icon" class="icon"> -->
+          <!-- @about.first.ImageUrl -->
+          <%= image_tag(image_path('icon-1.png'),class: 'icon')%>
+
+          <h5>CUSTOM PLAYER</h5>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+        </div>
+
+        <div class="info-pannel">
+          <!-- <img src="assets/img/elements/icon-2.png" alt="Icon" class="icon"> -->
+          <%= image_tag(image_path('icon-2.png'),class: 'icon')%>
+
+          <h5>DISCOGRAPHY</h5>
+
+          <p>Do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-sm-push-4 info right">
+        <div class="info-pannel">
+          <!-- <img src="assets/img/elements/icon-3.png" alt="Icon" class="icon"> -->
+          <%= image_tag(image_path('icon-3.png'),class: 'icon')%>
+          <h5>TOUR DATES</h5>
+
+          <p>Magna aliqua, nim ad minim veniam, quis nostrud exercitation ullamco .</p>
+        </div>
+
+        <div class="info-pannel">
+          <!-- <img src="assets/img/elements/icon-4.png" alt="Icon" class="icon"> -->
+          <%= image_tag(image_path('icon-4.png'),class: 'icon')%>
+          <h5>E-COMMERCE</h5>
+
+          <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-sm-pull-4">
+        <!-- <img src="assets/img/elements/about-img-1.png" alt="Img" class=" about-cover"> -->
+        <%= image_tag(image_path('about-img-1.png'), class: "about-cover")%>
+      </div>
+    </div>
+  </div>

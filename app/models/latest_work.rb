@@ -1,0 +1,2 @@
+class LatestWork < ApplicationRecord
+end

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ImageUrl: MyString
+  VideoUrl: MyString
+  TourTitle: MyString
+  TourDate: MyString
+  TourLocation: MyString
+
+two:
+  ImageUrl: MyString
+  VideoUrl: MyString
+  TourTitle: MyString
+  TourDate: MyString
+  TourLocation: MyString

@@ -1,0 +1,73 @@
+<div id="home" class="navigation-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8 col-sm-10 col-md-3 logo-container">
+          
+            
+            <%= link_to image_tag(image_path('logo-1.png')), root_url %>
+            <span>DJV Chirag</span>
+          
+        </div>
+        
+        <div class="col-sm-0 col-md-8 nav-container">
+          <ul id="main-nav" class="main-nav nav">
+            <li><a class="scrollTo" href="#rev-slider">Home</a></li>
+            <li><a class="scrollTo" href="#new-releases">New Releases</a></li>
+            <li><a class="scrollTo" href="#tour-dates">Tour</a></li>
+            <li><a class="scrollTo" href="#gallery">Gallery</a></li>
+            <li><a class="scrollTo" href="#about">About</a></li>
+            <li><a class="scrollTo" href="#latest-work">Shop</a></li>
+            <li><% if current_user %>
+                  <%= link_to "logout", destroy_user_session_path, method: :delete %>
+                <% else %>
+                  <%= link_to "login", new_user_session_path %>
+                <% end %>
+    
+            </li>
+            <li><a class="scrollTo" href="#blog">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-4 col-sm-2 col-md-1 cloud-container">
+          <a class="flaticon-cloud316" href="#"></a>
+          <i id="menu-button" class="flaticon-menu51 menu-btn"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="rev-slider" class="slider-container">
+    <div class="slider">
+      <ul>
+      <!-- First slide -->
+      <li data-transition="boxslide" data-slotamount="7">
+         <!-- <img src="assets/img/elements/slide-1.jpg" alt="slide 1 IMG"> -->
+         <%= image_tag(image_path('slide-1.jpg')) %>
+              <!-- here @home.third.ImageUrl will show -->
+         <div class="caption sft title"  data-x="center" data-y="290" data-speed="700" data-start="1300" data-easing="easeOutBack">Music Performance</div>
+
+         <div class="caption sfb paragraph"  data-x="center" data-y="370" data-speed="700" data-start="1500" data-easing="easeOutBack">There's definitely a lot of fun to be had with a bass station II live</div>
+
+         <div class="caption sfl button-rev tp-resizeme"  data-x="center" data-hoffset="-70" data-y="430" data-speed="700" data-start="1700" data-easing=""><a href="track.html"><i class="flaticon-shopping122"></i> Buy Now</a></div>
+
+         <div class="caption sfr button-rev dark tp-resizeme"  data-x="center" data-hoffset="70" data-y="430" data-speed="700" data-start="1700" data-easing=""><a href="track.html"><i class="flaticon-playbutton22"></i> Listen Track</a></div>
+
+         <div class="caption sfr button-rev visible-xs dark tp-resizeme "  data-x="center" data-hoffset="0" data-y="430" data-speed="700" data-start="1700" data-easing=""><a href="track.html"><i class="flaticon-playbutton22"></i> Listen Track</a></div>
+      </li>
+      <!-- Second slide -->
+      <li data-transition="boxslide" data-slotamount="7">
+         <!-- <img src="assets/img/elements/slide-1.jpg" alt="slide 1 IMG"> -->
+         <%= image_tag(image_path('slide-1.jpg')) %>
+
+         <div class="caption sft title"  data-x="center" data-y="290" data-speed="700" data-start="1300" data-easing="easeOutBack">Music Performance</div>
+
+         <div class="caption sfb paragraph"  data-x="center" data-y="370" data-speed="700" data-start="1500" data-easing="easeOutBack">There's definitely a lot of fun to be had with a bass station II live</div>
+
+         <div class="caption sfl button-rev tp-resizeme"  data-x="center" data-hoffset="-70" data-y="430" data-speed="700" data-start="1700" data-easing=""><a href="track.html"><i class="flaticon-shopping122"></i> Buy Now</a></div>
+
+         <div class="caption sfr button-rev dark tp-resizeme"  data-x="center" data-hoffset="70" data-y="430" data-speed="700" data-start="1700" data-easing=""><a href="track.html"><i class="flaticon-playbutton22"></i> Listen Track</a></div>
+
+          <div class="caption sfr button-rev visible-xs dark tp-resizeme "  data-x="center" data-hoffset="0" data-y="430" data-speed="700" data-start="1700" data-easing=""><a href="track.html"><i class="flaticon-playbutton22"></i> Listen Track</a></div>
+      </li>
+      </ul>
+    </div>
+  </div>
